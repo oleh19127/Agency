@@ -3,21 +3,26 @@ let body = document.querySelector('body')
 let nav = document.querySelector('.nav')
 let headerLink = document.querySelectorAll('.nav__link')
 let load = document.querySelector('.loading')
+let headerLogo = document.querySelector('.header__logo')
 
 document.addEventListener("DOMContentLoaded", function () {
 
-   // ? HAMBURGER
+   // ? HAMBURGER AND LOGO AND NAV
    hamburger.onclick = function (params) {
       body.classList.toggle('lock')
       nav.classList.toggle('is-active')
       hamburger.classList.toggle('active')
+   }
+   headerLogo.onclick = function (params) {
+      nav.classList.remove('is-active');
+      hamburger.classList.remove('active')
+      body.classList.remove('lock')
    }
    for (let i = 0; i < headerLink.length; i++) {
       headerLink[i].onclick = function () {
          nav.classList.remove('is-active');
          hamburger.classList.remove('active')
          body.classList.remove('lock')
-
       };
    }
 
@@ -179,4 +184,5 @@ var myElement = document.querySelector("header");
 // construct an instance of Headroom, passing the element
 var headroom = new Headroom(myElement);
 // initialise
+console.log(myElement);
 headroom.init();
