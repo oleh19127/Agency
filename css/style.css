@@ -292,7 +292,6 @@ h6 {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -300,6 +299,7 @@ body {
   min-width: 320px;
   position: relative;
   background: #fff;
+  overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -911,6 +911,20 @@ section {
 
 .our {
   background: #f5f5f5;
+  position: relative;
+}
+
+.our__bg {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+}
+
+.our__bg img {
+  width: 100px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .our__title {
@@ -921,13 +935,65 @@ section {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
+  overflow: hidden;
 }
 
 .swiper-container2 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.swiper-slide__name {
+  position: absolute;
+  bottom: 30px;
+  left: 115px;
+  width: 273px;
+  height: 50px;
+  -webkit-transform: skew(20deg);
+      -ms-transform: skew(20deg);
+          transform: skew(20deg);
+  background: #252525;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 39.43px;
+}
+
+.swiper-slide__prof {
+  position: absolute;
+  bottom: 4px;
+  left: 200px;
+  width: 169px;
+  height: 30px;
+  -webkit-transform: skew(20deg);
+      -ms-transform: skew(20deg);
+          transform: skew(20deg);
+  background: #bc2e3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 19px;
+  font-style: italic;
+  line-height: 31.97px;
 }
 
 @media (min-width: 576px) {
@@ -1494,6 +1560,10 @@ section {
   .what-bg {
     display: none;
   }
+
+  .our__bg {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 571px) {
@@ -1508,6 +1578,25 @@ section {
 
   .swiper-block__subtitle {
     display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .swiper-container2 .swiper-slide {
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide__name {
+    left: 50px;
+    bottom: 15px;
+    width: 200px;
+  }
+
+  .swiper-slide__prof {
+    width: 100px;
+    left: 100px;
+    bottom: -7px;
   }
 }
 
