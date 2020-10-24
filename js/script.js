@@ -37,6 +37,14 @@ document.addEventListener("DOMContentLoaded", function () {
    //    });
    // }
    // ibg();
+   var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      pagination: {
+         el: '.swiper-pagination',
+         type: 'progressbar',
+      },
+   });
 });
 
 
