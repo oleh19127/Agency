@@ -184,5 +184,4 @@ var myElement = document.querySelector("header");
 // construct an instance of Headroom, passing the element
 var headroom = new Headroom(myElement);
 // initialise
-console.log(myElement);
 headroom.init();
