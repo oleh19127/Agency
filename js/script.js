@@ -37,13 +37,33 @@ document.addEventListener("DOMContentLoaded", function () {
    //    });
    // }
    // ibg();
+   // ? PROCESS SLIDER
    var swiper = new Swiper('.swiper-container', {
       slidesPerView: 'auto',
       centeredSlides: true,
+      autoplay: {
+         delay: 2500,
+      },
       pagination: {
          el: '.swiper-pagination',
          type: 'progressbar',
       },
+   });
+
+   //? TEAM SLIDER
+   var swiper = new Swiper('.swiper-container2', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+         rotate: 50,
+         stretch: 0,
+         depth: 100,
+         modifier: 1,
+         slideShadows: true,
+      },
+
    });
 });
 

@@ -292,13 +292,13 @@ h6 {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-size: 16px;
   min-width: 320px;
   position: relative;
-  overflow-x: hidden;
   background: #fff;
   font-family: 'Open Sans', sans-serif;
 }
@@ -909,6 +909,27 @@ section {
   min-width: 200px;
 }
 
+.our {
+  background: #f5f5f5;
+}
+
+.our__title {
+  text-align: center;
+}
+
+.swiper-container2 {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-container2 .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -1436,6 +1457,14 @@ section {
     margin-bottom: 40px;
   }
 
+  .what__title {
+    margin-bottom: 40px;
+  }
+
+  .how__title {
+    margin-bottom: 40px;
+  }
+
   .swiper-container {
     margin-top: 30px;
   }
@@ -1494,6 +1523,14 @@ section {
   }
 
   .who__text {
+    margin-bottom: 20px;
+  }
+
+  .what__title {
+    margin-bottom: 20px;
+  }
+
+  .how__title {
     margin-bottom: 20px;
   }
 }
