@@ -6,7 +6,7 @@
 
 <pre>git clone https://github.com/MPortfolio/Agency.git</pre>
 
-1) Clone or <a  href="https://github.com/oleg312/MPortfolio/Agency/archive/main.zip">Download</a> **Agency** from GitHub
+1) Clone or <a  href="https://github.com/MPortfolio/Agency/archive/main.zip">Download</a> **Agency** from GitHub
 2) Open folder
 3) Double click on index.html
 ## ## Roadmap
