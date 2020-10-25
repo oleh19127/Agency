@@ -1747,7 +1747,11 @@ footer {
   }
 
   .mb-2 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+
+  .contact__title {
+    padding: 30px 0;
   }
 }
 
