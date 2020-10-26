@@ -466,10 +466,11 @@ footer {
 }
 
 .header {
+  position: relative;
   position: fixed;
   width: 100%;
   height: 100px;
-  z-index: 9999;
+  z-index: 60;
   -webkit-transition: all .4s linear;
   -o-transition: all .4s linear;
   transition: all .4s linear;
@@ -479,7 +480,17 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: #242424;
+  z-index: 61;
 }
 
 .header .container {
@@ -503,6 +514,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 61;
 }
 
 .header .nav.is-active {
@@ -589,7 +601,7 @@ footer {
   font-weight: 800;
   letter-spacing: -0.47px;
   position: relative;
-  z-index: 60;
+  z-index: 61;
 }
 
 .ham {
@@ -1630,6 +1642,7 @@ footer {
     transition: all .4s ease-in-out;
     opacity: 0;
     visibility: hidden;
+    z-index: 60;
   }
 
   .header .nav__list {
@@ -1640,17 +1653,19 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding-top: 60px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 70px;
   }
 
   .header .nav__item {
+    padding: 25px 0;
     margin-right: 0;
   }
 
   .header .nav__link {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .intro .container .rel img {
