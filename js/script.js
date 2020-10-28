@@ -7,7 +7,7 @@ let headerLogo = document.querySelector('.header__logo')
 
 document.addEventListener("DOMContentLoaded", function () {
    // ? SCROLL ANIMATION
-   sal();
+   AOS.init();
 
    // ? HAMBURGER AND LOGO AND NAV
    hamburger.onclick = function (params) {

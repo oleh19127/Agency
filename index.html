@@ -6,7 +6,7 @@
     <title>Agency</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Lemon&amp;family=Open+Sans:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/sal.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
     <link rel="stylesheet" href="css/style.min.css"/>
   </head>
   <body>
@@ -25,10 +25,10 @@
     </div>
     <header class="header">
       <div class="container"><a class="header__logo" href="#intro">Agency</a>
-        <svg class="ham ham3" viewbox="0 0 100 100" width="80">
-          <path class="line top" d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568"></path>
-          <path class="line middle" d="m 70,50 h -40 c -5.6862,0 -8.534259,5.373483 -8.534259,11.551069 0,7.187738 3.499166,10.922274 13.131984,10.922274 11.021777,0 7.022787,-15.773343 15.531095,-15.773343 3.268142,0 5.177031,-2.159429 5.177031,-6.7 0,-4.540571 -1.766442,-7.33533 -5.087851,-7.326157 -3.321409,0.0092 -5.771288,2.789632 -5.771288,7.326157 0,4.536525 2.478983,6.805271 5.771288,6.7"></path>
-          <path class="line bottom" d="m 70,67 h -40 c 0,0 -3.680675,0.737051 -3.660714,-3.517857 0.02541,-5.415597 3.391687,-10.357143 10.982142,-10.357143 4.048418,0 17.88928,0.178572 23.482143,0.178572 0,2.563604 2.451177,3.403635 4.642857,3.392857 2.19168,-0.01078 4.373905,-1.369814 4.375,-3.392857 0.0011,-2.023043 -1.924401,-2.589191 -4.553571,-4.107143 -2.62917,-1.517952 -4.196429,-1.799562 -4.196429,-3.660714 0,-1.861153 2.442181,-3.118811 4.196429,-3.035715 1.754248,0.0831 4.375,0.890841 4.375,3.125 2.628634,0 6.160714,0.267857 6.160714,0.267857 l -0.178571,-2.946428 10.178571,0 -10.178571,0 v 6.696428 l 8.928571,0 -8.928571,0 v 7.142858 l 10.178571,0 -10.178571,0"></path>
+        <svg class="ham hamRotate ham4" viewbox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+          <path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"></path>
+          <path class="line middle" d="m 70,50 h -40"></path>
+          <path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"></path>
         </svg>
         <nav class="nav">
           <ul class="nav__list">
@@ -49,12 +49,12 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-              <div class="intro__title" data-sal="slide-right" data-sal-delay="300">Think<br>outside<br>of the box</div>
+              <div class="intro__title" data-aos="fade-right">Think<br>outside<br>of the box</div>
               <div class="center">
-                <button class="intro__btn btn" data-sal="slide-up" data-sal-delay="300">read more</button>
+                <button class="intro__btn btn" data-aos="fade">read more</button>
               </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 rel"><img src="images/intro/2.webp" alt="" data-sal="slide-left" data-sal-delay="300"/></div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 rel"><img src="images/intro/2.webp" alt="" data-aos="fade-left"/></div>
           </div>
         </div>
       </div>
@@ -62,83 +62,83 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-sm-12 col-md-6">
-              <div class="title who__title" data-sal="zoom-in" data-sal-delay="300">Who we are</div>
-              <div class="text who__text" data-sal="slide-up" data-sal-delay="300">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
-              <button class="btn" data-sal="slide-up" data-sal-delay="300">read more</button>
+              <div class="title who__title" data-aos="zoom-out">Who we are</div>
+              <div class="text who__text" data-aos="fade-up">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+              <button class="btn" data-aos="fade">read more</button>
             </div>
             <div class="col-12 col-sm-12 col-md-6 align-center">
-              <div class="who__img" data-sal="slide-up" data-sal-delay="300"><img src="images/who/1.webp" alt=""/></div>
+              <div class="who__img" data-aos="zoom-out"><img src="images/who/1.webp" alt=""/></div>
             </div>
           </div>
         </div>
       </section>
       <section class="what" id="cervices">
-        <div class="what-bg" data-sal="fade" data-sal-delay="300"><img src="images/what/bg.webp" alt=""/></div>
+        <div class="what-bg" data-aos="fade"><img src="images/what/bg.webp" alt=""/></div>
         <div class="container">
-          <div class="title what__title" data-sal="zoom-in" data-sal-delay="300">What we do</div>
+          <div class="title what__title" data-aos="zoom-out">What we do</div>
           <div class="row">
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-              <div class="what-block" data-sal="slide-up" data-sal-delay="300">
-                <div class="what-block__top">
+              <div class="what-block">
+                <div class="what-block__top" data-aos="fade-down">
                   <div class="what-block__img"><img src="images/what/1.webp" alt=""/></div>
                   <div class="what-block__title">Creative Work</div>
                 </div>
-                <div class="what-block__bottom">
+                <div class="what-block__bottom" data-aos="fade-up">
                   <div class="text what-block__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</div>
                 </div>
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-              <div class="what-block" data-sal="slide-up" data-sal-delay="300">
-                <div class="what-block__top">
+              <div class="what-block">
+                <div class="what-block__top" data-aos="fade-down">
                   <div class="what-block__img"><img src="images/what/2.webp" alt=""/></div>
                   <div class="what-block__title">We do Best</div>
                 </div>
-                <div class="what-block__bottom">
+                <div class="what-block__bottom" data-aos="fade-up">
                   <div class="text what-block__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</div>
                 </div>
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-              <div class="what-block" data-sal="slide-up" data-sal-delay="300">
-                <div class="what-block__top">
+              <div class="what-block">
+                <div class="what-block__top" data-aos="fade-down">
                   <div class="what-block__img"><img src="images/what/3.webp" alt=""/></div>
                   <div class="what-block__title">Best Company</div>
                 </div>
-                <div class="what-block__bottom">
+                <div class="what-block__bottom" data-aos="fade-up">
                   <div class="text what-block__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</div>
                 </div>
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-              <div class="what-block" data-sal="slide-up" data-sal-delay="300">
-                <div class="what-block__top">
+              <div class="what-block">
+                <div class="what-block__top" data-aos="fade-down">
                   <div class="what-block__img"><img src="images/what/4.webp" alt=""/></div>
                   <div class="what-block__title">Nice Idea</div>
                 </div>
-                <div class="what-block__bottom">
+                <div class="what-block__bottom" data-aos="fade-up">
                   <div class="text what-block__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</div>
                 </div>
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-              <div class="what-block" data-sal="slide-up" data-sal-delay="300">
-                <div class="what-block__top">
+              <div class="what-block">
+                <div class="what-block__top" data-aos="fade-down">
                   <div class="what-block__img"><img src="images/what/5.webp" alt=""/></div>
                   <div class="what-block__title">Professional</div>
                 </div>
-                <div class="what-block__bottom">
+                <div class="what-block__bottom" data-aos="fade-up">
                   <div class="text what-block__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</div>
                 </div>
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-              <div class="what-block" data-sal="slide-up" data-sal-delay="300">
-                <div class="what-block__top">
+              <div class="what-block">
+                <div class="what-block__top" data-aos="fade-down">
                   <div class="what-block__img"><img src="images/what/6.webp" alt=""/></div>
                   <div class="what-block__title">Great Services</div>
                 </div>
-                <div class="what-block__bottom">
+                <div class="what-block__bottom" data-aos="fade-up">
                   <div class="text what-block__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</div>
                 </div>
               </div>
@@ -148,16 +148,16 @@
       </section>
       <section class="how" id="process">
         <div class="container">
-          <div class="title how__title" data-sal="zoom-in" data-sal-delay="300">How we works</div>
+          <div class="title how__title" data-aos="zoom-out">How we works</div>
           <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <div class="how-block">
-                <div class="how-block__text text" data-sal="slide-up" data-sal-delay="300">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</div>
+              <div class="how-block" data-aos="fade-up">
+                <div class="how-block__text text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</div>
               </div>
-              <button class="btn" data-sal="slide-up" data-sal-delay="300">read more</button>
+              <button class="btn" data-aos="fade">read more</button>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
-              <div class="swiper-container" data-sal="slide-up" data-sal-delay="300">
+              <div class="swiper-container" data-aos="zoom-out">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide"><img src="images/how/1.webp" alt=""/>
                     <div class="swiper-block">
@@ -185,12 +185,12 @@
         </div>
       </section>
       <section class="our" id="team">
-        <div class="our__bg" data-sal="fade" data-sal-delay="300"><img src="images/team/bg.webp" alt=""/></div>
+        <div class="our__bg" data-aos="fade"><img src="images/team/bg.webp" alt=""/></div>
         <div class="container">
-          <div class="title our__title" data-sal="zoom-in" data-sal-delay="300">Our creative team</div>
+          <div class="title our__title" data-aos="zoom-out">Our creative team</div>
           <div class="row">
             <div class="col-12">
-              <div class="swiper-container2" data-sal="slide-up" data-sal-delay="300">
+              <div class="swiper-container2" data-aos="zoom-out">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide" style="background-image:url(./images/team/1.webp)">
                     <div class="swiper-slide__name">Jimmy Doe</div>
@@ -211,18 +211,18 @@
         </div>
       </section>
       <section class="clients" id="clients">
-        <div class="clients__bg" data-sal="fade" data-sal-delay="300"><img src="images/clients/bg.webp" alt=""/></div>
+        <div class="clients__bg" data-aos="fade"><img src="images/clients/bg.webp" alt=""/></div>
         <div class="container">
-          <div class="title clients__title" data-sal="zoom-in" data-sal-delay="300">What client says</div>
+          <div class="title clients__title" data-aos="zoom-out">What client says</div>
           <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
-              <div class="clienst__img" data-sal="slide-up" data-sal-delay="300"><img src="images/team/1.webp" alt=""/></div>
+              <div class="clienst__img" data-aos="zoom-out"><img src="images/team/1.webp" alt=""/></div>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
-              <div class="clients-block">
-                <div class="clients-block__text" data-sal="slide-up" data-sal-delay="300">Sed  ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.<span>“</span></div>
-                <div class="clients-block__company" data-sal="slide-up" data-sal-delay="300">Jinny Snow, Company CEO</div>
-                <div class="clients-block__img" data-sal="slide-up" data-sal-delay="300"><img src="images/team/1.webp" alt=""/><img src="images/team/2.webp" alt=""/><img src="images/team/3.webp" alt=""/></div>
+              <div class="clients-block" data-aos="fade-up">
+                <div class="clients-block__text">Sed  ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.<span>“</span></div>
+                <div class="clients-block__company">Jinny Snow, Company CEO</div>
+                <div class="clients-block__img"><img src="images/team/1.webp" alt=""/><img src="images/team/2.webp" alt=""/><img src="images/team/3.webp" alt=""/></div>
               </div>
             </div>
           </div>
@@ -230,12 +230,12 @@
       </section>
     </main>
     <footer class="footer" id="contact">
-      <div class="footer__bg" data-sal="fade" data-sal-delay="300"><img src="images/footer/bg2.webp" alt=""/></div>
+      <div class="footer__bg" data-aos="fade"><img src="images/footer/bg2.webp" alt=""/></div>
       <div class="container">
-        <div class="title contact__title" data-sal="zoom-in" data-sal-delay="300">Get in touch</div>
+        <div class="title contact__title" data-aos="zoom-out" data-aos-anchor-placement="bottom-bottom">Get in touch</div>
         <div class="row">
           <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="contact-block mb-2" data-sal="slide-up" data-sal-delay="300">
+            <div class="contact-block mb-2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
               <div class="contact-block__icon"><img src="images/footer/email.svg" alt=""/></div>
               <div class="contact-block__text">
                 <div class="contact-block__title">Email</div>
@@ -244,7 +244,7 @@
             </div>
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="contact-block mb-3" data-sal="slide-up" data-sal-delay="300">
+            <div class="contact-block mb-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
               <div class="contact-block__icon"><img src="images/footer/phone.svg" alt=""/></div>
               <div class="contact-block__text">
                 <div class="contact-block__title">Phone</div>
@@ -253,7 +253,7 @@
             </div>
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="contact-block mb-2" data-sal="slide-up" data-sal-delay="300">
+            <div class="contact-block mb-2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
               <div class="contact-block__icon"><img src="images/footer/map.svg" alt=""/></div>
               <div class="contact-block__text">
                 <div class="contact-block__title">Office</div>
@@ -262,15 +262,15 @@
             </div>
           </div>
           <div class="col-12">
-            <div class="contact__social"><img src="images/intro/facebook.svg" alt="" data-sal="slide-up" data-sal-delay="300"/><img src="images/footer/google-plus.svg" alt="" data-sal="slide-up" data-sal-delay="300"/><img src="images/footer/vk.svg" alt="" data-sal="slide-up" data-sal-delay="300"/><img src="images/footer/youtube-logotype.svg" alt="" data-sal="slide-up" data-sal-delay="300"/><img src="images/footer/linkedin.svg" alt="" data-sal="slide-up" data-sal-delay="300"/><img src="images/footer/digg.svg" alt="" data-sal="slide-up" data-sal-delay="300"/><img src="images/footer/twitter.svg" alt="" data-sal="slide-up" data-sal-delay="300"/></div>
-            <div class="hr" data-sal="slide-up" data-sal-delay="300"></div>
-            <div class="footer__text" data-sal="slide-up" data-sal-delay="300">Copyright © 2017. PSDFreebies.com  | Best PSD Template for freelancer and agencies</div>
+            <div class="contact__social"><img src="images/intro/facebook.svg" alt="" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"/><img src="images/footer/google-plus.svg" alt="" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"/><img src="images/footer/vk.svg" alt="" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"/><img src="images/footer/youtube-logotype.svg" alt="" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"/><img src="images/footer/linkedin.svg" alt="" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"/><img src="images/footer/digg.svg" alt="" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"/><img src="images/footer/twitter.svg" alt="" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"/></div>
+            <div class="hr" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"></div>
+            <div class="footer__text" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Copyright © 2017. PSDFreebies.com  | Best PSD Template for freelancer and agencies</div>
           </div>
         </div>
       </div>
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/sal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>
