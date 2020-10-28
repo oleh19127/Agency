@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
    for (const link of headerLink) {
       link.addEventListener("click", clickHandler);
    }
+   headerLogo.addEventListener("click", clickHandler);
    function clickHandler(e) {
       e.preventDefault();
       const href = this.getAttribute("href");
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
       hamburger.classList.remove('active')
       body.classList.remove('lock')
    }
+
    for (let i = 0; i < headerLink.length; i++) {
       headerLink[i].onclick = function () {
          nav.classList.remove('is-active');
