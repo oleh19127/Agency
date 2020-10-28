@@ -6,6 +6,19 @@ let load = document.querySelector('.loading')
 let headerLogo = document.querySelector('.header__logo')
 
 document.addEventListener("DOMContentLoaded", function () {
+   // ? SMOOTH SCROLL
+   for (const link of headerLink) {
+      link.addEventListener("click", clickHandler);
+   }
+   function clickHandler(e) {
+      e.preventDefault();
+      const href = this.getAttribute("href");
+      const offsetTop = document.querySelector(href).offsetTop + -50;
+      scroll({
+         top: offsetTop,
+         behavior: "smooth"
+      });
+   }
    // ? SCROLL ANIMATION
    AOS.init();
 
