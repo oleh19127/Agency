@@ -2849,13 +2849,16 @@ footer {
 }
 
 .header .nav.is-active {
-  right: 0%;
   -webkit-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   overflow: auto;
   opacity: 1;
   visibility: visible;
+}
+
+.header .nav.is-active li {
+  top: 0;
 }
 
 .header .nav__list {
@@ -3956,9 +3959,9 @@ footer {
 
   .header .nav {
     position: fixed;
-    right: -100%;
+    right: 0;
     top: 0;
-    width: 250px;
+    width: 100%;
     height: 100vh;
     background: #252525;
     -webkit-transition: all .4s ease-in-out;
@@ -3970,14 +3973,65 @@ footer {
   }
 
   .header .nav__list {
-    display: block;
-    text-align: right;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-top: 70px;
   }
 
   .header .nav__item {
     padding: 25px;
     margin-right: 0;
+    position: relative;
+    padding: 45px 0;
+    top: -100%;
+    left: 0;
+  }
+
+  .header .nav__item:nth-child(1) {
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  .header .nav__item:nth-child(2) {
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+  .header .nav__item:nth-child(3) {
+    -webkit-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+  }
+
+  .header .nav__item:nth-child(4) {
+    -webkit-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+  }
+
+  .header .nav__item:nth-child(5) {
+    -webkit-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+  }
+
+  .header .nav__item:nth-child(6) {
+    -webkit-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+  }
+
+  .header .nav__item:nth-child(7) {
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
   }
 
   .header .nav__link {
