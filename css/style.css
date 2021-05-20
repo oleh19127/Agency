@@ -3984,10 +3984,8 @@ footer {
   }
 
   .header .nav__item {
-    padding: 25px;
     margin-right: 0;
     position: relative;
-    padding: 45px 0;
     top: -100%;
     left: 0;
   }
@@ -3996,6 +3994,7 @@ footer {
     -webkit-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+    margin-top: 20px;
   }
 
   .header .nav__item:nth-child(2) {
